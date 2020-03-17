@@ -45,3 +45,15 @@ class WithCacheCoVoidApi(BaseInterfaceCoVoid):
                 return i
         else:
             return None
+
+    async def close(self) -> bool:
+        """
+
+        :return:
+        """
+        await self.session.close()
+        try:
+            self.cache_list.clear()
+        except AttributeError:
+            pass
+        return True

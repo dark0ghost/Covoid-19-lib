@@ -41,10 +41,6 @@ class BaseInterfaceCoVoid:
         :return:
         """
         await self.session.close()
-        try:
-            self.cache_list.clear()
-        except AttributeError:
-            pass
         return True
 
     async def get_all_data(self) -> typing.Dict[str, typing.Any]:
@@ -56,7 +52,7 @@ class BaseInterfaceCoVoid:
     async def get_full_data(self) -> typing.Tuple[typing.Dict[str, typing.Any], typing.Dict[str, typing.Any]]:
         pass
 
-    async def get_data_country(self, name: str):
+    async def get_data_country(self, name: str) -> typing.Optional[typing.Dict[str, typing.Any]]:
         pass
 
     async def format_json(self, all_data: bool = False, endpoint_data: bool = False,
