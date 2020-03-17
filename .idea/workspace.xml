@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df3797ec-466e-4ce6-95d5-2f36392815b1" name="Default Changelist" comment="" />
+    <list default="true" id="df3797ec-466e-4ce6-95d5-2f36392815b1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/python/src/NoCacheCoVoidAPI.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/src/WithCacheCoVoidApi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/src/CoVoid_2019.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/src/base/BaseClassCoVoid.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +23,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ZDxFJhygj2FFnb7W6YINlrm5jq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -26,8 +32,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Python.CoVoid_2019">
-    <configuration name="CoVoid_2019" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.NoCacheCoVoidAPI">
+    <configuration name="NoCacheCoVoidAPI" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CoVoid_19 Api " />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -39,7 +45,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/src/CoVoid_2019.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/src/NoCacheCoVoidAPI.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -92,11 +98,11 @@
     </configuration>
     <list>
       <item itemvalue="Python.py" />
-      <item itemvalue="Python.CoVoid_2019" />
+      <item itemvalue="Python.NoCacheCoVoidAPI" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.CoVoid_2019" />
+        <item itemvalue="Python.NoCacheCoVoidAPI" />
       </list>
     </recent_temporary>
   </component>
@@ -122,21 +128,25 @@
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state x="703" y="326" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1044@0.0.1920.1044" timestamp="1584392676190" />
-    <state width="1897" height="380" key="GridCell.Tab.0.bottom" timestamp="1584392453820">
+    <state width="1897" height="380" key="GridCell.Tab.0.bottom" timestamp="1584392780134">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state width="1897" height="380" key="GridCell.Tab.0.bottom/0.0.1920.1044@0.0.1920.1044" timestamp="1584392453820" />
-    <state width="1897" height="380" key="GridCell.Tab.0.center" timestamp="1584392453818">
+    <state width="1897" height="380" key="GridCell.Tab.0.bottom/0.0.1920.1044@0.0.1920.1044" timestamp="1584392780134" />
+    <state width="1897" height="380" key="GridCell.Tab.0.center" timestamp="1584392780134">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state width="1897" height="380" key="GridCell.Tab.0.center/0.0.1920.1044@0.0.1920.1044" timestamp="1584392453818" />
-    <state width="1897" height="380" key="GridCell.Tab.0.left" timestamp="1584392453817">
+    <state width="1897" height="380" key="GridCell.Tab.0.center/0.0.1920.1044@0.0.1920.1044" timestamp="1584392780134" />
+    <state width="1897" height="380" key="GridCell.Tab.0.left" timestamp="1584392780134">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state width="1897" height="380" key="GridCell.Tab.0.left/0.0.1920.1044@0.0.1920.1044" timestamp="1584392453817" />
-    <state width="1897" height="380" key="GridCell.Tab.0.right" timestamp="1584392453818">
+    <state width="1897" height="380" key="GridCell.Tab.0.left/0.0.1920.1044@0.0.1920.1044" timestamp="1584392780134" />
+    <state width="1897" height="380" key="GridCell.Tab.0.right" timestamp="1584392780134">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state width="1897" height="380" key="GridCell.Tab.0.right/0.0.1920.1044@0.0.1920.1044" timestamp="1584392453818" />
+    <state width="1897" height="380" key="GridCell.Tab.0.right/0.0.1920.1044@0.0.1920.1044" timestamp="1584392780134" />
+    <state x="639" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1584428764058">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="639" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1584428764058" />
   </component>
 </project>
