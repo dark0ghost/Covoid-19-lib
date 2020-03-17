@@ -4,6 +4,9 @@ from python.src.base.BaseClassCoVoid import BaseInterfaceCoVoid
 
 
 class WithCacheCoVoidApi(BaseInterfaceCoVoid):
+
+    cache_list: typing.List[typing.Dict[str, typing.Any]] = list()
+
     async def get_all_data(self) -> typing.List[typing.Dict[str, typing.Any]]:
         """
         get full data
