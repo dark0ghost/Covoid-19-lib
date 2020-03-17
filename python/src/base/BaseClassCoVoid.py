@@ -29,9 +29,8 @@ class BaseClassCoVoid:
         """
         return f"{self.__class__.__name__}({hash(self.session)})"
 
-    async def close(self) -> bool:
+    def close(self) -> bool:
         """
-
         :return:
         """
         await self.session.close()
