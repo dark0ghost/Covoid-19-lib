@@ -1,6 +1,6 @@
 import typing
 
-from python.src.base.BaseClassCoVoid import BaseInterfaceCoVoid
+from python.src.base.BaseClassCoVoid import BaseClassCoVoid
 
 try:
     import ujson as json
@@ -8,7 +8,7 @@ except ImportError:
     import json
 
 
-class NoCacheCoVoidAPI(BaseInterfaceCoVoid):
+class NoCacheCoVoidAPI(BaseClassCoVoid):
 
 
     async def get_all_data(self) -> typing.List[typing.Dict[str, typing.Any]]:

@@ -9,7 +9,7 @@ except ImportError:
     import json
 
 
-class BaseInterfaceCoVoid:
+class BaseClassCoVoid:
 
     all_data_url: str = "https://coronavirus-19-api.herokuapp.com/all"
     endpoint_data_url: str = "https://coronavirus-19-api.herokuapp.com/countries"
