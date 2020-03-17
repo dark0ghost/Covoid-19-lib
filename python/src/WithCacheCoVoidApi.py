@@ -1,9 +1,9 @@
 import typing
 
-from python.src.base.BaseClassCoVoid import BaseInterfaceCoVoid
+from python.src.base.BaseClassCoVoid import BaseClassCoVoid
 
 
-class WithCacheCoVoidApi(BaseInterfaceCoVoid):
+class WithCacheCoVoidApi(BaseClassCoVoid):
 
     cache_list: typing.List[typing.Dict[str, typing.Any]] = list()
 
