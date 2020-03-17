@@ -38,7 +38,7 @@ class WithCacheCoVoidApi(BaseInterfaceCoVoid):
 
         return response_all, response_endpoint
 
-    async def get_data_country(self, name: str) -> typing.Optional[typing.Dict[str, typing.Any]]:
+    def get_data_country(self, name: str) -> typing.Optional[typing.Dict[str, typing.Any]]:
         response: typing.List[typing.Dict[str, typing.Any]] = self.cache_list[-1]
         for i in response:
             if i["country"] == name:
@@ -57,3 +57,5 @@ class WithCacheCoVoidApi(BaseInterfaceCoVoid):
         except AttributeError:
             pass
         return True
+
+

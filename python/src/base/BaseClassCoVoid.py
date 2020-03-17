@@ -10,19 +10,14 @@ except ImportError:
 
 
 class BaseInterfaceCoVoid:
+
     all_data_url: str = "https://coronavirus-19-api.herokuapp.com/all"
     endpoint_data_url: str = "https://coronavirus-19-api.herokuapp.com/countries"
 
-    def __init__(self, session: typing.Optional[aiohttp.ClientSession] = None,
-                 loop: typing.Optional[asyncio.AbstractEventLoop] = None) -> None:
+    def __init__(self, session: typing.Optional[aiohttp.ClientSession] = None) -> None:
         """
         :param session:
         """
-
-        if loop:
-            self.loop = loop
-        else:
-            self.loop = asyncio.new_event_loop()
         if session:
             self.session = session
         else:
@@ -33,7 +28,6 @@ class BaseInterfaceCoVoid:
         :return:
         """
         return f"{self.__class__.__name__}({hash(self.session)})"
-
 
     async def close(self) -> bool:
         """
@@ -56,7 +50,7 @@ class BaseInterfaceCoVoid:
         pass
 
     async def format_json(self, all_data: bool = False, endpoint_data: bool = False,
-                        js: typing.Optional[typing.Dict] = None, indent: int = 4):
+                          js: typing.Optional[typing.Dict] = None, indent: int = 4):
         """
 
         :param all_data:
