@@ -19,7 +19,6 @@ class BaseInterfaceCoVoid:
         :param session:
         """
 
-        self.cache_list = list()
         if loop:
             self.loop = loop
         else:
