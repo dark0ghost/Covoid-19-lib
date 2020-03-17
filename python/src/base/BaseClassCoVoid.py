@@ -33,28 +33,15 @@ class BaseInterfaceCoVoid:
         """
         :return:
         """
-        return f"{self.__class__.__name__}(cache: {hash(self.cache)})"
+        return f"{self.__class__.__name__}({hash(self.session)})"
 
-    def __hash__(self) -> int:
+
+    async def close(self) -> bool:
         """
 
         :return:
         """
-        return hash(self.cache) ^ hash(self.loop) and hash(self.session)
-
-    def __del__(self) -> None:
-        """
-
-        :return:
-        """
-        self.loop.run_until_complete(self.session.close())
-
-    def close(self) -> bool:
-        """
-
-        :return:
-        """
-        self.__del__()
+        await self.session.close()
         try:
             self.cache_list.clear()
         except AttributeError:
@@ -73,7 +60,7 @@ class BaseInterfaceCoVoid:
     async def get_data_country(self, name: str):
         pass
 
-    async def read_json(self, all_data: bool = False, endpoint_data: bool = False,
+    async def format_json(self, all_data: bool = False, endpoint_data: bool = False,
                         js: typing.Optional[typing.Dict] = None, indent: int = 4):
         """
 
