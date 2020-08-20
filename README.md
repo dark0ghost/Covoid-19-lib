@@ -1,5 +1,5 @@
 # Covoid-19-lib
-__ lib implementing [app](https://coronavirus-19-api.herokuapp.com/) api__
+__lib implementing__ [app](https://coronavirus-19-api.herokuapp.com/) __api__
 # python
 [implement](https://github.com/dark0ghost/Covoid-19-lib/tree/master/python/src)
 # python use
